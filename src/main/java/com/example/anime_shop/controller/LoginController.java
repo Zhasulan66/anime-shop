@@ -1,5 +1,6 @@
 package com.example.anime_shop.controller;
 
+import com.example.anime_shop.global.GlobalData;
 import com.example.anime_shop.model.Role;
 import com.example.anime_shop.model.User;
 import com.example.anime_shop.repository.RoleRepository;
@@ -29,6 +30,7 @@ public class LoginController {
 
     @GetMapping("/login")
     public String login(){
+        GlobalData.cart.clear();
         return "login";
     }
 
