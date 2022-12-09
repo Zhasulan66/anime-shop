@@ -1,0 +1,20 @@
+version: '3.1'
+
+services:
+  postgres:
+    image: 'postgres:13'
+    container_name: 'java-postgres'
+    environment:
+      - 'POSTGRES_USER=postgres'
+      - 'POSTGRES_PASSWORD=bzhz2002'
+      - 'POSTGRES_DB=anime-shop'
+
+  app:
+    build: ./
+    container_name: 'java_app'
+    ports:
+    - 8080:8080
+    links:
+      - 'postgres:localhost'
+
+

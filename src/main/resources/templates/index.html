@@ -10,6 +10,11 @@
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
           integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet"
+            href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css "
+    />
+    <link rel="stylesheet" href="" th:href="@{/css/styles.css}"/>
+    <link rel="stylesheet" href="" th:href="@{/css/reset.css}"/>
     <title>Document</title>
     
 </head>
@@ -19,7 +24,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light" >
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
-            <img th:src="@{/images/logo.png}"  src="../static/images/logo.png" width="auto" height="40" class="d-inline-block align-top" alt=""/>
+            <img th:src="@{/img/logo.png}" src="../static/img/logo.png" width="auto" height="40" class="d-inline-block align-top" alt="logo"/>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -51,6 +56,186 @@
         </div>
     </div>
 </nav>
+
+<!-- Intro -->
+<div class="intro">
+    <div class="container">
+        <div class="intro_inner">
+            <h1 class="intro_title">Anime Store</h1>
+            <h2 class="intro_suptitle">New Exclusive items for holidays!</h2>
+
+            <a class="butn" href="#">Shop Now</a>
+        </div>
+    </div>
+</div>
+
+<!-- Places start -->
+<section class="places">
+    <div class="wrapper-full">
+        <div class="places__caption">
+            <h2 class="places__title section-title">
+                Goods by Categories!
+            </h2>
+            <a href="#!" class="places__view-all">VIEW ALL</a>
+        </div>
+
+        <div class="places__cards">
+
+            <figure class="places__card places__card_size_lg">
+                <img th:src="@{/img/category/cat_item1.jpg}" alt="Cuddly Toys" class="places__card-pic places__card-pic_size_lg">
+                <figcaption class="places__card-title">
+                    Cuddly Toys
+                </figcaption>
+                <a href="#!" class="places__card-link"></a>
+            </figure>
+
+            <figure class="places__card places__card_size_lg">
+                <img th:src="@{/img/category/cat_item2.jpg}" alt="clothes" class="places__card-pic places__card-pic_size_lg">
+                <figcaption class="places__card-title">
+                    Сlothes
+                </figcaption>
+                <a href="#!" class="places__card-link"></a>
+            </figure>
+
+            <figure class="places__card places__card_size_sm">
+                <img th:src="@{/img/category/cat_item3.jpg}" alt="Funko" class="places__card-pic places__card-pic_size_sm">
+                <figcaption class="places__card-title">
+                    Funko
+                </figcaption>
+                <a href="#!" class="places__card-link"></a>
+            </figure>
+
+            <figure class="places__card places__card_size_sm">
+                <img th:src="@{/img/category/cat_item4.jpg}" alt="Figures" class="places__card-pic places__card-pic_size_sm">
+                <figcaption class="places__card-title">
+                    Figures
+                </figcaption>
+                <a href="#!" class="places__card-link"></a>
+            </figure>
+
+            <figure class="places__card places__card_size_sm">
+                <img th:src="@{/img/category/cat_item5.jpg}" alt="Fandom" class="places__card-pic places__card-pic_size_sm">
+                <figcaption class="places__card-title">
+                    Fandom
+                </figcaption>
+                <a href="#!" class="places__card-link"></a>
+            </figure>
+
+        </div>
+    </div>
+</section>
+<!-- Places end -->
+
+<!-- Tours start -->
+
+<div class="tours">
+    <div class="wrapper-full">
+
+        <div class="tours__tour tour">
+            <div class="tour__pic">
+                <img th:src="@{./img/chainsaw1.png}" alt="anime-pic" class="tour__thumb">
+            </div>
+            <div class="tour__info">
+                <h3 class="tour__title">
+                    Any product by Anime Series
+                </h3>
+                <p class="tour__desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <a href="#!" class="tour__more">VIEW ANIME SERIES</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Tours start -->
+
+<!-- Our Partners -->
+<div class="container">
+    <div class="partners">
+        <ul class="partner_list">
+            <li class="partner_item">
+                <img class="part_img" th:src="@{img/partners/DB.png}" alt="" />
+            </li>
+            <li class="partner_item">
+                <img class="part_img" th:src="@{img/partners/Demon_Slayer.png}" alt="" />
+            </li>
+            <li class="partner_item">
+                <img class="part_img" th:src="@{img/partners/JJK.png}" alt="" />
+            </li>
+            <li class="partner_item">
+                <img class="part_img" th:src="@{img/partners/MHA.png}" alt="" />
+            </li>
+            <li class="partner_item">
+                <img class="part_img" th:src="@{img/partners/Naruto.png}" alt="" />
+            </li>
+            <li class="partner_item">
+                <img class="part_img" th:src="@{img/partners/OP.png}" alt="" />
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--partners ends-->
+
+<!--Footer-->
+<div class="footer">
+
+    <div class="footer_top">
+        <div class="footer_top_info">
+            <div class="footer_title">We're social</div>
+            <ul class="footer_icons">
+                <li class="icon">
+                    <i class="fa fa-facebook"></i>
+                </li>
+                <li class="icon">
+                    <i class="fa fa-twitter"></i>
+                </li>
+                <li class="icon">
+                    <i class="fa fa-instagram"></i>
+                </li>
+            </ul>
+            <div class="footer_title">Join our mailing list</div>
+            <div class="footer_email">
+                <input type="email" placeholder="Email address">
+                <button class="btn btn-warning">SUBSCRIBE</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer_down">
+
+        <div class="footer_item">
+            <div class="footer_item_title">About Us</div>
+            <ul>
+                <li class="footer_list_item">About Link</li>
+                <li class="footer_list_item">Our social Link</li>
+                <li class="footer_list_item">Company Info</li>
+            </ul>
+        </div>
+        <div class="footer_item">
+            <div class="footer_item_title">Helpful Links</div>
+            <ul>
+                <li class="footer_list_item">Login</li>
+                <li class="footer_list_item">Cart</li>
+                <li class="footer_list_item">Blog</li>
+            </ul>
+        </div>
+        <div class="footer_item">
+            <div class="footer_item_title">Services</div>
+            <ul>
+                <li class="footer_list_item">Shop</li>
+                <li class="footer_list_item">Categories</li>
+                <li class="footer_list_item">Cart</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer_item">
+        <img class="footer_image" th:src="@{img/Hime_Footer_800x800.png}" src="image/Hime_Footer_800x800.png" alt="anime_char">
+    </div>
+
+</div>
 
 
 

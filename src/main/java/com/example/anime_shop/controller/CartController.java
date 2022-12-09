@@ -1,13 +1,10 @@
 package com.example.anime_shop.controller;
 
 import com.example.anime_shop.global.GlobalData;
-import com.example.anime_shop.model.Category;
 import com.example.anime_shop.model.Order;
 import com.example.anime_shop.model.Product;
-import com.example.anime_shop.model.User;
 import com.example.anime_shop.service.OrderService;
 import com.example.anime_shop.service.ProductService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,11 +14,14 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class CartController {
-    @Autowired
-    ProductService productService;
 
-    @Autowired
-    OrderService orderService;
+    final ProductService productService;
+    final OrderService orderService;
+
+    public CartController(ProductService productService, OrderService orderService) {
+        this.productService = productService;
+        this.orderService = orderService;
+    }
 
     @GetMapping("/addToCart/{id}")
     public String addToCart(@PathVariable int id){
